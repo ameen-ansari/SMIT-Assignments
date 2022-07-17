@@ -1,0 +1,56 @@
+#hre{
+    width: 100vw;
+    height: 0.3rem;
+    background-color: rgb(106, 106, 167);
+    margin: 0%;
+    padding: 0%;
+}
+.fluid-container {
+    line-height:1rem;
+}
+body{
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.insideundersevenplus {
+    line-height:1rem;
+    display: flex;
+}
+.fbtwlogo {
+    width:7em;
+    /* border: 2px solid black; */
+}
+.fbtwlogo2 {
+    height: 5rem;
+}
+
+.wspace {
+    letter-spacing: 0.10rem;
+}
+
+.bg-dark{
+    background-color: black;
+    color: white;
+    /* width: 100vw; */
+    /* height: 51vh; */
+    text-align: center;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+.sevenplus {
+    width: 100vw;
+    height: 45vh;
+}
+#body {
+    scroll-behavior: smooth;
+}
+.grop{
+    z-index: -4;
+}
+.inpu{
+    width:28vw;
+ }
+

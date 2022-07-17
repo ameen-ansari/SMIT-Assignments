@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+/* Navbar */
+#navbar{
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    /* border: 2px solid black; */
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    /* margin: 1%; */
+}
+    
+
+#navbar1 {
+    display: flex;
+    height: 3rem;
+    /* border: 2px solid black; */
+    list-style: none;
+    align-items:center;
+    justify-content:start;
+    width: 40%;
+    margin-left: 14px;
+}
+#navbar2 {
+    width: 60%;
+    display: flex;
+    height: 3rem;
+    /* border: 2px solid black; */
+    list-style: none;
+    align-items: center;
+    justify-content:end;
+}
+.item {
+    margin: 0rem 1.5rem;
+}
+a
+{
+    text-decoration: none;
+}
+.bg {
+    background-color: rgb(202, 207, 212);
+    width: 100%;
+}
+/* Section1 */
+.section1 {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+#section11 {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+#section12 {
+    display: flex;
+    flex-direction: column;
+    width: 34vw;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+#headinsec1 {
+    line-height: 2rem;
+}
+.btn1 button{
+    padding: 5px 15px;
+    margin: 2px;
+    border-radius: 7px;
+}
+/* section2 */
+.section2 {
+    text-align: center;
+    width:100%;
+    height: 10rem;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid black; */
+}
+
+
+.container1 {
+    width:100%;
+    height: 30vh;
+    display: flex;
+    align-items:center ;
+    justify-content:space-between;
+}
+.subcon {
+    display: flex;
+    align-items:center ;
+    justify-content:center;
+    width:31%;
+    height:20vh;
+    border:2px solid rgb(133, 134, 133);
+    align-items: center;
+    justify-content: center;
+}
+.sdi {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content:center;
+    width:31%;
+    height:30vh;
+    border:2px solid rgb(133, 134, 133);
+    align-items: center;
+    justify-content: center;
+}
+.sdi h2 {
+    margin-bottom: 4%;
+    color: orange;
+}
+.bttt {
+    padding: 15px 10px;
+    border: none;
+    display: block;
+    width: 15%;
+    border-radius: 7px;
+    margin:12px auto;
+}
+.con4 {
+    /* width: 100%; */
+    height: 50%;
+    display: flex;
+    /* border: 2px solid red; */
+    margin: 25px;
+}
+#con4by1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#con4by2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btt{
+    padding: 10px 15px;
+    border: none;
+    display: block;
+    width: 15%;
+    border-radius: 7px;
+    margin:12px 0px;
+}
+#client img{
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+#client{
+text-align: center;
+}
+#form
+{
+    display: flex;
+flex-direction: column;
+width: 90%;
+}
+.input
+{
+    outline: 0;
+    width: 60%;
+    margin:1% 2%;
+    padding: 0.6rem 0rem;
+    border: none;
+    border-bottom: 2px solid black ;
+}
+#lc{
+    display: flex;
+    width: 100%;
+    height:60vh;
+    margin-top: 100px;
+}
+#csms
+{
+    display: flex;
+    width: 100%;
+    height:35vh;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid rgb(71, 57, 84); */
+}
+.sms{
+    width: 23%;
+    height: 100%;
+    /* border: 2px solid blueviolet; */
+}
+.btttt{
+    padding: 2px 4px ;
+    border-radius: 6px;
+}
+.intro {
+    text-align: center;
+    width: 40%;
+    height: 5rem;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items:center ;
+    justify-content:center;
+}
+#navbar3{
+    display:none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    line-height: 50px;
+    background-color: rgb(62, 64, 65);
+}
+button:hover{
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}

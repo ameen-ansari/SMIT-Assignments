@@ -1,0 +1,123 @@
+ /* // Small devices (landscape phones, 576px and up) */
+ @media (min-width: 300px) {
+     .sectionone {
+         width: 97vw;
+     }
+
+     .undersevenplus,
+     .hrkuuper {
+         width: 90vw;
+     }
+
+     .eyeimage {
+         position: relative;
+         top: -8.5vw;
+         z-index: -3;
+     }
+
+     .form {
+         width: 50vw;
+     }
+     .inpu{
+        width:45vw;
+     }
+     
+     
+     
+
+ }
+
+ @media (min-width: 576px) {
+     .sectionone {
+         width: 75vw;
+     }
+
+     .undersevenplus,
+     .hrkuuper {
+         width: 70vw;
+     }
+
+     .eyeimage {
+         position: relative;
+         top: -7.5vw;
+     }
+
+     .form {
+         width: 50vw;
+
+     }
+     .inpu{
+        width:25vw;
+
+ }}
+
+ /* // Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) {
+     .sectionone {
+         width: 75vw;
+     }
+
+     .undersevenplus,
+     .hrkuuper {
+         width: 50vw;
+     }
+
+     .eyeimage {
+         position: relative;
+         top: -3.5vw;
+     }
+
+     .form {
+         width: 50vw;
+
+     }
+     .inpu{
+        width:25vw;
+ }
+ }
+ /* // Large devices (desktops, 992px and up) */
+ @media (min-width: 992px) {
+     .sectionone {
+         width: 60vw;
+     }
+
+     .undersevenplus,
+     .hrkuuper {
+         width: 50vw;
+     }
+
+     .eyeimage {
+         position: relative;
+         top: -3.5vw;
+     }
+
+     .form {
+         width: 40vw;
+
+     }
+     .inpu{
+        width:25vw;
+
+ }}
+
+ /* // Extra large devices (large desktops, 1200px and up) */
+ @media (min-width: 1200px) {
+     .sectionone {
+         width: 60vw;
+     }
+
+     .undersevenplus,
+     .hrkuuper {
+         width: 40vw;
+     }
+
+     .eyeimage {
+         position: relative;
+         top: -2.5vw;
+     }
+
+     .form {
+         width: 50vw;
+     }
+     .inpu{
+        width:25vw;}}
