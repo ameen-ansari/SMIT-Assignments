@@ -92,8 +92,144 @@
 // table(uservalue)
 
 // 10. Write a ts program to count number of digits in a number.
-function counter(a: string) {
-  console.log(a.length)
+// function counter(a: string) {
+//   console.log(a.length)
+// }
+// var uservalue: string = prompt('Please enter the value')
+// counter(uservalue)
+
+// 11. Write a ts program to find first and last digit of a number.
+// var uservalue: any = prompt('Please enter the value')
+// function flind(num: string) {
+//   console.log('First Index', num?.charAt(0))
+//   let lengthofnum: number = num.length
+//   console.log('las tindex', num?.charAt(lengthofnum - 1))
+// }
+// if (uservalue.length === 0) {
+//     window.location.reload()
+// }else{
+//     flind(uservalue)
+// }
+
+// 12. Write a ts program to find sum of first and last digit of a number
+// var uservalue: any = prompt('Please enter the value')
+// function flind(num: string) {
+//   let findex: number = Number(num?.charAt(0))
+//   console.log('First Index', findex)
+//   let lengthofnum: number = num.length
+//   let lindex: number = Number(num?.charAt(lengthofnum - 1))
+//   console.log('last Index',lindex)
+//   console.log(`the sum of ${findex} + ${lindex} = ${findex+lindex}`)
+// }
+// if (uservalue.length === 0) {
+//   window.location.reload()
+// } else {
+//   flind(uservalue)
+// }
+
+// 13. Write a ts program to swap first and last digits of a number. {in 2.5 hours}
+// var user: any = prompt('Enter the value')
+// function swap(value: any) {
+//   for (let index = 0; index < user.length; index++) {
+//     if (index == 0) {
+//       value = user[user.length - 1]
+//     } else if (index == user.length - 1) {
+//       value += user[0]
+//     } else {
+//       value += user[index]
+//     }
+//   }
+//   console.log(value)
+// }
+// swap(user)
+
+// 14. Write a ts program to calculate sum of digits of a number.
+// var user: any = prompt('Enter the value')
+// var ans
+// function sum(value: any) {
+//   for (let index = 0; index < user.length; index++) {
+//     if (index == 0) {
+//       ans = Number(value[index])
+//     } else {
+//       ans += Number(value[index])
+//     }
+//   }
+//   console.log(ans)
+// }
+// sum(user)
+
+// 15. Write a ts program to calculate product of digits of a number.
+// var user: any = prompt('Enter the value')
+// var user:string = '44'
+// var ans
+// function findproduct(value: any) {
+//   for (let index = 0; index < user.length; index++) {
+//     if (index == 0) {
+//       ans = Number(value[index])
+//     } else {
+//       ans *= Number(value[index])
+//     }
+//   }
+//   console.log(ans)
+// }
+// findproduct(user)
+
+// 16. Write a ts program to enter a number and print its reverse.
+// var user: any = prompt('Enter the value')
+// var ans:any;
+// function reverse(a: string) {
+//   var b = user.length - 1
+//  for (let index = b; index > -1; index--) {
+//   if (index == b) {
+//     ans = a[index]
+//   }else{
+//     ans += a[index]
+//   }
+// }
+// console.log(ans);
+// }
+// reverse(user)
+
+// 17. Write a ts program to check whether a number is palindrome or not.
+// var user: any = prompt('Enter the value')
+// var ans:any;
+// function palindrome(a: string) {
+//   var b = user.length - 1
+//  for (let index = b; index > -1; index--) {
+//   if (index == b) {
+//     ans = a[index]
+//   }else{
+//     ans += a[index]
+//   }
+// }
+// if (ans === user) {
+//   console.log('palindrome number');
+// }else{
+//   console.log('Not a palindrome number')
+// }
+// }
+// palindrome(user)
+
+// 18. Write a ts program to find frequency of each digit in a given integer.
+var num = '8889'
+var a = /\d+/g
+// function frequency(a: any) {
+//   let freq
+//   var b = 0
+//   for (var index = 0; index < a.length; index++) {
+//     for (let inindex = 0; inindex < a.length; inindex++) {
+//       if (a[index] == a[inindex]) {
+//         if (a[inindex] != a[0]) {
+//           console.log(a[inindex]);
+//         }
+//       }
+//     }
+//   }
+// }
+// frequency(num)
+if (num.matchAll(a)) {
+  console.log(num.match(a));
+}else{
+  console.log('nothing found');
 }
-var uservalue: any = prompt('Please enter the value')
-counter(uservalue)
+

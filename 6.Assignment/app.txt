@@ -13,7 +13,6 @@ List of loop programming exercises
 12. Write a ts program to find sum of first and last digit of a number.
 13. Write a ts program to swap first and last digits of a number.
 14. Write a ts program to calculate sum of digits of a number.
-15. Write a ts program to calculate product of digits of a number.
 16. Write a ts program to enter a number and print its reverse.
 17. Write a ts program to check whether a number is palindrome or not.
 18. Write a ts program to find frequency of each digit in a given integer.
