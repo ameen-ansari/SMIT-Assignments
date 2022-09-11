@@ -211,25 +211,26 @@
 // palindrome(user)
 
 // 18. Write a ts program to find frequency of each digit in a given integer.
-var num = '8889'
-var a = /\d+/g
-// function frequency(a: any) {
-//   let freq
-//   var b = 0
-//   for (var index = 0; index < a.length; index++) {
-//     for (let inindex = 0; inindex < a.length; inindex++) {
-//       if (a[index] == a[inindex]) {
-//         if (a[inindex] != a[0]) {
-//           console.log(a[inindex]);
-//         }
-//       }
+// var num:any = prompt('Enter the complete number')
+// var value:any = prompt('Frequent number')
+// function freq(n: number, d: number) {
+//   let c = 0
+//   while (n > 0) {
+//     if (n % 10 == d) {
+//       c++
 //     }
-//   }
+//     n = parseInt(n / 10)
 // }
-// frequency(num)
-if (num.matchAll(a)) {
-  console.log(num.match(a));
-}else{
-  console.log('nothing found');
-}
+// console.log(c,"Times Repeate");
+// }
+// freq(num , value)
 
+// 19. Write a ts program to enter a number and print it in words.
+
+// 20. Write a ts program to print all ASCII character with their values.
+// var num: any = prompt('Enter the word here')
+// function numtoword(a: string) {
+//   var b = a.charCodeAt()
+//   console.log(b)
+// }
+// numtoword(num)
