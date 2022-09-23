@@ -1,12 +1,12 @@
-// ---->Note Please Check 1 program at a time because I am using common variables<-----
+// ---->Note Please Check 1 program at a time On console because I am using common variables<-----
 // 1. Write a ts program to find maximum between two numbers.
-var num1:number = 2
-var num2:number = 4
-if(num1 > num2){
-    console.log('num1 is greater than num2');
-}else{
-    console.log('num2 is greater than num1');
-}
+// var num1:number = 2
+// var num2:number = 4
+// if(num1 > num2){
+//     console.log('num1 is greater than num2');
+// }else{
+//     console.log('num2 is greater than num1');
+// }
 
 // 2. Write a ts program to find maximum between three numbers.
 // var num1: number = 2

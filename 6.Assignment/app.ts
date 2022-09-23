@@ -410,23 +410,4 @@
 // }
 
 // 27. Write a ts program to print all Prime numbers between 1 to n.
-{
-    let num1: string | null = prompt('Enter The Number from')
-    let num2: string | null = prompt('Enter The Number to')
-    let index:any
-    let findPrimeNum = (x:any ,y:any) => {
-      let arr1:any []= []  
-      let index = x
-        for (index < y; index++;) {
-          console.log(index);          
-        }
-      // if (arr1.length == 0) {
-      //   console.log("A Prime Number");
-      // }else{
-      //   console.log("Not A Prime Number");
-      // }
-      console.log(arr1);
-    }
-    findPrimeNum(num1 , num2)
-}
 

@@ -385,22 +385,3 @@
 //     findPrimeNum(num1)
 // }
 // 27. Write a ts program to print all Prime numbers between 1 to n.
-{
-    var num1 = prompt('Enter The Number from');
-    var num2 = prompt('Enter The Number to');
-    var index = void 0;
-    var findPrimeNum = function (x, y) {
-        var arr1 = [];
-        var index = x;
-        for (index < y; index++;) {
-            console.log(index);
-        }
-        // if (arr1.length == 0) {
-        //   console.log("A Prime Number");
-        // }else{
-        //   console.log("Not A Prime Number");
-        // }
-        console.log(arr1);
-    };
-    findPrimeNum(num1, num2);
-}
