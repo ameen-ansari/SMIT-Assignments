@@ -207,10 +207,200 @@
 // }
 // freq(num , value)
 // 19. Write a ts program to enter a number and print it in words.
+// {let num: string | null = prompt('Enter The Number')
+// function toWordFunc(a: string) {
+//   for (let index = 0; index < a.length; index++) {
+//     const valueindex = a[index]
+//     if (valueindex == '1') {
+//       console.log('One')
+//     } else if (valueindex == '2') {
+//       console.log('Two')
+//     } else if (valueindex == '3') {
+//       console.log('Three')
+//     } else if (valueindex == '4') {
+//       console.log('Four')
+//     } else if (valueindex == '5') {
+//       console.log('Five')
+//     } else if (valueindex == '6') {
+//       console.log('Six')
+//     } else if (valueindex == '7') {
+//       console.log('Seven')
+//     } else if (valueindex == '8') {
+//       console.log('Eight')
+//     } else if (valueindex == '9') {
+//       console.log('Nine')
+//     } else {
+//       console.log('Zero')
+//     }
+//   }
+// }}
+// numtoword(num)}
 // 20. Write a ts program to print all ASCII character with their values.
-// var num: any = prompt('Enter the word here')
+// {var num: any = prompt('Enter the word here')
 // function numtoword(a: string) {
 //   var b = a.charCodeAt()
 //   console.log(b)
 // }
-// numtoword(num)
+// 21. Write a ts program to find power of a number using for loop.
+// export {}
+//         {
+//   let num1: string | null = prompt('Enter The Number')
+//   let num2: string | null = prompt('Enter The Power of Number')
+//   let powerFinder = (a:any, b:any) => {
+//     let index:number = 1
+//     let ans:number = 0;
+//     while (index < b) {
+//       if (index == 1) {
+//         ans = a * a
+//       } else {
+//         ans = ans * a
+//       }
+//       index++
+//     }
+//     console.log(ans);
+//     return ans
+//   }
+//   powerFinder(num1,num2)
+// }
+// 22. Write a ts program to find all factors of a number.
+// {
+//   let num: string | null = prompt('Enter The Number')
+//   let findFactor = (a: any) => {
+//     let index: number = 0
+//     while (index <= a) {
+//       if (a % index == 0) {
+//         console.log(index)
+//       }
+//       index++
+//     }
+//   }
+//   findFactor(num)
+// }
+// 23. Write a ts program to calculate factorial of a number.
+// {
+//   let num: string | null = prompt('Enter The Number')
+//   let findFactorial = (a: any) => {
+//     let index: number = 0
+//     let ans: number = 0
+//     while (index <= a) {
+//       ans = ans +index
+//       index++
+//     }
+//     console.log(ans);
+//   }
+//   findFactorial(num)
+// }
+// 24. Write a ts program to find HCF (GCD) of two numbers.
+// {
+//   let num1: string | null = prompt('Enter The Number')
+//   let num2: string | null = prompt('Enter The Number')
+//   let findLCM = (a: any, b: any) => {
+//     let arr1:any[] = [] 
+//     let arr2:any[] = [] 
+//     let arr3:any[] = [] 
+//     let index1:number;
+//     let index2:number;
+//     let index3:number;
+//     for (index1 = 2 ; index1 <= a; index1++) {
+//       const e1 = a
+//       if (e1 % index1 == 0) {
+//         arr1.push(index1)
+//       }
+//     }
+//     for (index2 = 2 ; index2 <= b; index2++) {
+//       const e2 = b
+//       if (e2 % index2 == 0) {
+//         arr2.push(index2)
+//       }
+//     }
+//     console.log(`Factors of ${a}`,arr1);
+//     console.log(`Factors of ${b}`,arr2);
+//     arr1.forEach((e)=>{
+//       for (index3 = 0 ; index3 <= arr2.length; index3++) {
+//         if (e == arr2[index3]) {
+//           arr3.push(e)
+//         }
+//       }
+//     })
+//     console.log("LCM = " , arr3[0]);
+//     return arr3[0]
+//   }
+//   findLCM(num1, num2)
+// }
+// 25. Write a ts program to find LCM of two numbers.
+// {
+//   let num1: string | null = prompt('Enter The Number')
+//   let num2: string | null = prompt('Enter The Number')
+//   let findHCF = (a: any, b: any) => {
+//     let arr1:any[] = [] 
+//     let arr2:any[] = [] 
+//     let arr3:any[] = [] 
+//     let index1:number;
+//     let index2:number;
+//     let index3:number;
+//     for (index1 = 2 ; index1 <= a; index1++) {
+//       const e1 = a
+//       if (e1 % index1 == 0) {
+//         arr1.push(index1)
+//       }
+//     }
+//     for (index2 = 2 ; index2 <= b; index2++) {
+//       const e2 = b
+//       if (e2 % index2 == 0) {
+//         arr2.push(index2)
+//       }
+//     }
+//     console.log(`Factors of ${a}`,arr1);
+//     console.log(`Factors of ${b}`,arr2);
+//     arr1.forEach((e)=>{
+//       for (index3 = 0 ; index3 <= arr2.length; index3++) {
+//         if (e == arr2[index3]) {
+//           arr3.push(e)
+//         }
+//       }
+//     })
+//     console.log("HCF = " ,arr3[arr3.length - 1]);
+//     return arr3[arr3.length - 1]
+//   }
+//   findHCF(num1, num2)
+// }
+// 26. Write a ts program to check whether a number is Prime number or not.
+// {
+//     let num1: string | null = prompt('Enter The Number')
+//     let index:any
+//     let findPrimeNum = (x:any) => {
+//       let arr1:any []= []  
+//       for ( index = 2; index < x; index++) {
+//         if (x % index == 0) {
+//           arr1.push(index)
+//         }
+//       }
+//       if (arr1.length == 0) {
+//         console.log("A Prime Number");
+//       }else{
+//         console.log("Not A Prime Number");
+//       }
+//       console.log(arr1);
+//     }
+//     findPrimeNum(num1)
+// }
+// 27. Write a ts program to print all Prime numbers between 1 to n.
+{
+    var num1 = prompt('Enter The Number from');
+    var num2 = prompt('Enter The Number to');
+    var index = void 0;
+    var findPrimeNum = function (x, y) {
+        var arr1 = [];
+        var index = x;
+        for (index < y; index++;) {
+            console.log(index);
+        }
+        // if (arr1.length == 0) {
+        //   console.log("A Prime Number");
+        // }else{
+        //   console.log("Not A Prime Number");
+        // }
+        console.log(arr1);
+    };
+    findPrimeNum(num1, num2);
+}
