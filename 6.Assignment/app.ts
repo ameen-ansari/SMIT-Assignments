@@ -317,9 +317,9 @@
 //   let num1: string | null = prompt('Enter The Number')
 //   let num2: string | null = prompt('Enter The Number')
 //   let findLCM = (a: any, b: any) => {
-//     let arr1:any[] = [] 
-//     let arr2:any[] = [] 
-//     let arr3:any[] = [] 
+//     let arr1:any[] = []
+//     let arr2:any[] = []
+//     let arr3:any[] = []
 //     let index1:number;
 //     let index2:number;
 //     let index3:number;
@@ -355,9 +355,9 @@
 //   let num1: string | null = prompt('Enter The Number')
 //   let num2: string | null = prompt('Enter The Number')
 //   let findHCF = (a: any, b: any) => {
-//     let arr1:any[] = [] 
-//     let arr2:any[] = [] 
-//     let arr3:any[] = [] 
+//     let arr1:any[] = []
+//     let arr2:any[] = []
+//     let arr3:any[] = []
 //     let index1:number;
 //     let index2:number;
 //     let index3:number;
@@ -393,7 +393,7 @@
 //     let num1: string | null = prompt('Enter The Number')
 //     let index:any
 //     let findPrimeNum = (x:any) => {
-//       let arr1:any []= []  
+//       let arr1:any []= []
 //       for ( index = 2; index < x; index++) {
 //         if (x % index == 0) {
 //           arr1.push(index)
@@ -410,4 +410,30 @@
 // }
 
 // 27. Write a ts program to print all Prime numbers between 1 to n.
+// program to print prime numbers between the two numbers
 
+// take input from the user
+const lowerNumber = 8;
+const higherNumber = 14
+
+console.log(`The prime numbers between ${lowerNumber} and ${higherNumber} are:`);
+
+// looping from lowerNumber to higherNumber
+let flag = [];
+for (let i = lowerNumber; i <= higherNumber; i++) {
+
+    // looping through 2 to user input number
+    for (let j = 2; j < i; j++) {
+        if (i % j == 0) {
+            console.log(i+'=>'+j);
+            break;
+        }else{
+            flag.push(i)
+        }
+    }
+
+    // if number greater than 1 and not divisible by other numbers
+    // if (i > 1 && flag == 0) {
+        // }
+    }
+    console.log(flag);
