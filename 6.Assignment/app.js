@@ -386,25 +386,120 @@
 // }
 // 27. Write a ts program to print all Prime numbers between 1 to n.
 // program to print prime numbers between the two numbers
-// take input from the user
-var lowerNumber = 8;
-var higherNumber = 14;
-console.log("The prime numbers between ".concat(lowerNumber, " and ").concat(higherNumber, " are:"));
-// looping from lowerNumber to higherNumber
-var flag = [];
-for (var i = lowerNumber; i <= higherNumber; i++) {
-    // looping through 2 to user input number
-    for (var j = 2; j < i; j++) {
-        if (i % j == 0) {
-            console.log(i + '=>' + j);
-            break;
-        }
-        else {
-            flag.push(i);
-        }
-    }
-    // if number greater than 1 and not divisible by other numbers
-    // if (i > 1 && flag == 0) {
-    // }
-}
-console.log(flag);
+// {
+//   let input1: string | null = prompt('Starting From')
+//   let input2: string | null = prompt('End Number')
+//   function primeNumF(a: string | null, b: string | null) {
+//     let x = Number(a)
+//     let y = Number(b)
+//     let condition = false
+//     for (let index1 = x; index1 <= y; index1++) {
+//       for (let index2 = 2; index2 < index1; index2++) {
+//         if (index1 % index2 === 0) {
+//           condition = false
+//           break
+//         } else {
+//           condition = true
+//         }
+//       }
+//       if (index1 === 2) {
+//         condition = true
+//       }
+//       if (condition === true) {
+//         console.log(index1)
+//       }
+//     }
+//   }
+//   primeNumF(input1, input2)
+// }
+// 28. Write a ts program to find sum of all prime numbers between 1 to n.
+// {
+//   let input1: string | null = prompt('Starting From')
+//   let input2: string | null = prompt('End Number')
+//   function primeNumS(a: string | null, b: string | null):number {
+//     let x = Number(a)
+//     let y = Number(b)
+//     let arr1: number[] = []
+//     let condition = false
+//     for (let index1 = x; index1 <= y; index1++) {
+//       for (let index2 = 2; index2 < index1; index2++){
+//         if (index1 % index2 === 0) {
+//           condition = false
+//           break
+//         } else {
+//           condition = true
+//         }
+//     }
+//     if (index1 === 2 || index1 === 1) {
+//           condition = true
+//       }
+//       if (condition === true) {
+//           arr1.push(index1)
+//       }
+//     }
+//     let newArr = arr1.reduce((x,y)=>{
+//         return x+y
+//     })
+//     console.log(newArr);
+//     return newArr
+//   }
+//   primeNumS(input1, input2)
+// }
+// 29. Write a ts program to find all prime factors of a number.
+// {
+//   let num: string | null = prompt('Enter The Number')
+//   let PrimeInFts = (a: string | null): number[] => {
+//     let newArr: number[] = []
+//     let arrForP: number[] = []
+//     let x = Number(num)
+//     let index: number = 1
+//     let condition: boolean = false
+//     while (index <= x) {
+//       if (x % index == 0) {
+//         newArr.push(index)
+//       }
+//       index++
+//     }
+//     for (let index1 = 0; index1 < newArr.length; index1++) {
+//       let elem = newArr[index1]
+//       for (let index2 = 2; index2 < elem; index2++) {
+//         if (elem % index2 === 0) {
+//           condition = false
+//           break
+//         } else {
+//           condition = true
+//         }
+//       }
+//       if (elem === 2 || elem === 1) {
+//         condition = true
+//       }
+//       if (condition === true) {
+//         arrForP.push(elem)
+//       }
+//     }
+//     console.log('Factors =>', newArr)
+//     console.log('Prime Numbers In Factors =>', arrForP)
+//     return arrForP
+//   }
+//   PrimeInFts(num)
+// }
+// 30. Write a ts program to check whether a number is Armstrong number or not.
+// {
+//   let num: string | null = prompt('Enter The Number')
+//   function findArm(a: string | null) {
+//     let x = Number(a)
+//     let sum: number = 0
+//     if (a !== null) {
+//       for (let index = 0; index < a.length; index++) {
+//         let element: number = Number(a[index])
+//         sum = sum + element * element * element
+//       }
+//       if (sum == x) {
+//         console.log('Armstrong Number')
+//       } else {
+//         console.log('Not a Armstrong Number')
+//       }
+//     }
+//   }
+//   findArm(num)
+// }
