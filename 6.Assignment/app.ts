@@ -531,3 +531,61 @@
 //   }
 //   findArm(num)
 // }
+
+// 31. Write a ts program to print all Armstrong numbers between 1 to n.
+{
+  //   let num1: string | null = prompt('Enter The Number')
+  //   let num2: string | null = prompt('Enter The Number')
+  function findArm(a: string | null, b: string | null) {
+    let x = Number(a)
+    let y = Number(b)
+    let arrArmS:number[] = []
+    // console.log(y);
+    let sum: number = 0
+    let condition: boolean = false
+    if (a !== null) {
+      for (let index1 = x; index1 <= y; index1++) {
+        console.log("index1 =>"+index1);
+      }
+      // console.log(arrArmS);
+    }
+  }
+  findArm('1', '15')
+}
+// {
+//   let num: string | null = prompt('Enter The Number')
+//   let PrimeInFts = (a: string | null): number[] => {
+//     let newArr: number[] = []
+//     let arrForP: number[] = []
+//     let x = Number(num)
+//     let index: number = 1
+//     let condition: boolean = false
+//     while (index <= x) {
+//       if (x % index == 0) {
+//         newArr.push(index)
+//       }
+//       index++
+//     }
+//     for (let index1 = 0; index1 < newArr.length; index1++) {
+//       let elem = newArr[index1]
+//       for (let index2 = 2; index2 < elem; index2++) {
+//         if (elem % index2 === 0) {
+//           condition = false
+//           break
+//         } else {
+//           condition = true
+//         }
+//       }
+//       if (elem === 2 || elem === 1) {
+//         condition = true
+//       }
+//       if (condition === true) {
+//         arrForP.push(elem)
+//       }
+//     }
+//     console.log('Factors =>', newArr)
+//     console.log('Prime Numbers In Factors =>', arrForP)
+//     return arrForP
+//   }
+//   PrimeInFts(num)
+// }

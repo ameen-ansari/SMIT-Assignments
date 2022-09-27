@@ -193,12 +193,45 @@
 //   occurenceF(num1)
 // }
 // 16. Write a ts program to search all occurrences of a character in given string.
-function aOcurence(a) {
-    console.log(a);
-    return a;
-}
-aOcurence('1563561');
+// {
+//   let num1: string | null = prompt('Enter The String')
+//   let num2: string | null = prompt('occurence of number')
+//   function SOcurence(a: string | null, b: string | null) {
+//     if (a !== null && b !== null) {
+//       for (let index = 0; index < a.length; index++) {
+//         const element = a[index]
+//         if (element == b) {
+//           console.log('index-' + index + '=>', b)
+//         }
+//       }
+//     }
+//   }
+//   SOcurence(num1, num2)
+// }
 // 17. Write a ts program to count occurrences of a character in given string.
+// {
+//   let num1: string | null = prompt('Enter The String')
+//   let num2: string | null = prompt('occurence of number')
+//   function SOcurence(a: string | null, b: string | null) {
+//     let counter:number = 0
+//     if (a !== null && b !== null) {
+//       for (let index = 0; index < a.length; index++) {
+//         const element = a[index]
+//         if (element == b) {
+//             counter++
+//         }
+//       }
+//     }
+//     console.log(counter+" Times Occur In Given String");
+//     return counter
+//   }
+//   SOcurence(num1, num2)
+// }
+// 18. Write a ts program to find highest frequency character in a string.
+var a = 'abcc';
+var b = a.split('');
+console.log(b);
+// 19. Write a ts program to find lowest frequency character in a string.
 // 20. Write a ts program to count frequency of each character in a string.
 // {
 //   let num1: string | null = prompt('Enter The String')
