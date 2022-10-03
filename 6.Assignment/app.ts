@@ -532,11 +532,14 @@
 //   findArm(num)
 // }
 
+// working on 31
+
 // 31. Write a ts program to print all Armstrong numbers between 1 to n.
+
 {
   //   let num1: string | null = prompt('Enter The Number')
   //   let num2: string | null = prompt('Enter The Number')
-  function findArm(a: string | null, b: string | null) {
+  let  findArm = (a: string | null, b: string | null) => {
     let x = Number(a)
     let y = Number(b)
     let arrArmS:number[] = []

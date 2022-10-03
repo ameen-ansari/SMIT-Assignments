@@ -295,11 +295,170 @@
 // }
 // ==> List of switch case programming exercises
 // 1. Write a ts program to print day of week name using switch case.
+// Method a
+//{
+//     let dayName = ():string => {
+//         let day:number = new Date().getDay()
+//         let nameOfDays:string[] = ['Sunday' , 'Monday' , 'Tuesday' , 'Wednesday' , ' Thursday' , 'Friday' , 'Saturday' ]
+//         let toDay:string = nameOfDays[day]
+//         console.log(toDay);
+//         return toDay
+//     }
+// Method b
+//     dayName()
+// let day: number = new Date().getDay()
+// switch (day) {
+//   case 1:
+//     console.log("Today Is =>",'Monday')
+//     break
+//   case 2:
+//     console.log("Today Is =>",'Tuesday')
+//     break
+//   case 3:
+//     console.log("Today Is =>",'Wednesday')
+//     break
+//   case 4:
+//     console.log("Today Is =>",'Thursday')
+//     break
+//   case 5:
+//     console.log("Today Is =>",'Friday')
+//     break
+//   case 6:
+//     console.log("Today Is =>",'Saturday')
+//     break
+//   default:
+//     console.log("Today Is =>",'Sunday')
+//     break
+// }
+// }
 // 2. Write a ts program print total number of days in a month using switch case.
+// {
+//   let month: number = new Date().getMonth() + 1
+//   let year: number = new Date().getFullYear()
+//   switch (month) {
+//     case 1:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//     case 2:
+//       if (year % 4 === 0) {
+//         console.log('Days In This Month Is =>', 28)
+//       } else {
+//         console.log('Days In This Month Is =>', 29)
+//       }
+//       break
+//     case 3:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//     case 4:
+//       console.log('Days In This Month Is =>', 30)
+//       break
+//     case 5:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//     case 6:
+//       console.log('Days In This Month Is =>', 30)
+//       break
+//     case 7:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//     case 8:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//     case 9:
+//       console.log('Days In This Month Is =>', 30)
+//       break
+//     case 10:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//     case 11:
+//       console.log('Days In This Month Is =>', 30)
+//       break
+//     default:
+//       console.log('Days In This Month Is =>', 31)
+//       break
+//   }
+// }
 // 3. Write a ts program to check whether an alphabet is vowel or consonant using switch case.
+//method 1
+// let alphabet:RegExp = /[aeiou]/i
+// let letter:string | null = prompt('Enter Your Letter')
+// switch (letter) {
+//     case "a":
+//         console.log('Vowel');
+//         break;
+//     case "e":
+//         console.log('Vowel');
+//         break;
+//     case "i":
+//         console.log('Vowel');
+//         break;
+//     case "o":
+//         console.log('Vowel');
+//         break;
+//     case "u":
+//         console.log('Vowel');
+//         break;
+//         default:
+//         console.log('Not A Vowel');
+//         break;
+// }
+//method 2
+// if (letter !== null) {
+//     if(letter.match(alphabet)){
+//         console.log('Vowel');
+//     }else{
+//         console.log('Not A Vowel');
+//     }
+// }
 // 4. Write a ts program to find maximum between two numbers using switch case.
+// {
+//   let num1: string | null = prompt('Enter Number One Here')
+//   let num2: string | null = prompt('Enter Number Two Here')
+//   if (num1 !== null && num2 !== null) {
+//     switch (true) {
+//       case num1 > num2:
+//         console.log(`${num1} Is Greater Than ${num2}`)
+//         break
+//       case num1 < num2:
+//         console.log(`${num2} Is Greate Than ${num1}`)
+//         break
+//       default:
+//         console.log('Number Is Equal')
+//         break
+//     }
+//   }
+// }
 // 5. Write a ts program to check whether a number is even or odd using switch case.
+// {
+//   let num: number = 23
+//   switch (true) {
+//     case num % 2 === 0:
+//       console.log('Even Number')
+//       break
+//     default:
+//       console.log('Odd Number')
+//       break
+//   }
+// }
 // 6. Write a ts program to check whether a number is positive, negative or zero using switch case.
+// {
+//   let num1: string | null = prompt('Enter Number Here')
+//   let num:number = Number(num1) 
+//   if (num !== null ) {
+//     switch (true) {
+//       case num > 0:
+//         console.log('Number Is Positive +')
+//         break
+//         case num < 0:
+//           console.log('Number Is Negitive -')
+//         break
+//       default:
+//         console.log('Number Is Zero 0')
+//         break
+//     }
+//   }
+// }
 // 7. Write a ts program to find roots of a quadratic equation using switch case.
+// ? NOt Interested Question
 // 8. Write a ts program to create Simple Calculator using switch case.
-//Inshallah Next Time
+// Not UnderStand This Question 

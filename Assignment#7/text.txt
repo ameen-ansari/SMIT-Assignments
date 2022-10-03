@@ -17,6 +17,8 @@ String Exercise
 16. Write a ts program to search all occurrences of a character in given string.
 17. Write a ts program to count occurrences of a character in given string.
 18. Write a ts program to find highest frequency character in a string.
+
+
 19. Write a ts program to find lowest frequency character in a string.
 20. Write a ts program to count frequency of each character in a string.
 21. Write a ts program to remove first occurrence of a character from string.
