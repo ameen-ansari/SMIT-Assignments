@@ -228,10 +228,9 @@
 //   SOcurence(num1, num2)
 // }
 // 18. Write a ts program to find highest frequency character in a string.
-var a = 'abcc';
-var b = a.split('');
-console.log(b);
+// working
 // 19. Write a ts program to find lowest frequency character in a string.
+// working
 // 20. Write a ts program to count frequency of each character in a string.
 // {
 //   let num1: string | null = prompt('Enter The String')
@@ -249,3 +248,58 @@ console.log(b);
 //   }
 //   occurenceF(num1, num2)
 // }
+//Solve kar raha hu(Under Construction Area)
+// ==> conditional operators programming exercises
+// 1. Write a ts program to find maximum between two numbers using conditional operator.
+// var num1:number = 2
+// var num2:number = 4
+// if(num1 > num2){
+//     console.log('num1 is greater than num2');
+// }else{
+//     console.log('num2 is greater than num1');
+// }
+// 2. Write a ts program to find maximum between three numbers using conditional operator.
+// var num1: number = 2
+// var num2: number = 4
+// var num3: number = 6
+// if (num1 > num2 && num1 > num3) {
+//   console.log('num1 is greater than num2 & num3')
+// } else if (num2 > num1 && num2 > num3) {
+//   console.log('num2 is greater than num1 & num3')
+// }else{
+//     console.log('num3 is greater than num1 & num2')
+// }
+// 3. Write a ts program to check whether a number is even or odd using conditional operator.
+// var num1: number = 67
+// if (num1 % 2 === 0) {
+//   console.log('Number is Even')
+// } else {
+//   console.log('Number is Odd')
+// }
+// 4. Write a ts program to check whether year is leap year or not using conditional operator.
+// var dt:any = new Date()
+// var year:number = dt.getFullYear()
+// if (year % 4 === 0) {
+//     console.log('Present Year Is a Leap Year');
+// }
+// else{
+//     console.log('Present Year Is Not a Leap Year');
+// }
+// 5. Write a ts program to check whether character is an alphabet or not using conditional operator.
+// var vowel: string = 'aeiou'
+// var check: string = 'u'
+// if (vowel.includes(check)) {
+//   console.log('number is Vowel')
+// } else {
+//   console.log('number is Not a Vowel')
+// }
+// ==> List of switch case programming exercises
+// 1. Write a ts program to print day of week name using switch case.
+// 2. Write a ts program print total number of days in a month using switch case.
+// 3. Write a ts program to check whether an alphabet is vowel or consonant using switch case.
+// 4. Write a ts program to find maximum between two numbers using switch case.
+// 5. Write a ts program to check whether a number is even or odd using switch case.
+// 6. Write a ts program to check whether a number is positive, negative or zero using switch case.
+// 7. Write a ts program to find roots of a quadratic equation using switch case.
+// 8. Write a ts program to create Simple Calculator using switch case.
+//Inshallah Next Time
