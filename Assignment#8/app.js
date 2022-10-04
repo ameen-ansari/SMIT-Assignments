@@ -5,15 +5,6 @@
 //     console.log(e)
 //   })
 // }
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 // 2. Write a ts program to print all negative elements in an array.
 // {
 //   let numArr: number[] = [-3, -2, -1, 0, 1, 2, 3]
@@ -263,40 +254,38 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 //   console.log('Odd Numbers', odd)
 // }
 // 21. Write a ts program to left rotate an array.
-{
-    var arr1 = [1, 2, 3, 4, 5, 6];
-    var index1 = Math.ceil(arr1.length / 2);
-    var newone = [];
-    var newtwo = [];
-    var final = [];
-    for (var index = 0; index < arr1.length; index++) {
-        var element = arr1[index];
-        if (index >= index1) {
-            newone.push(element);
-        }
-        else {
-            newtwo.push(element);
-        }
-    }
-    final = __spreadArray(__spreadArray([], newone, true), newtwo, true);
-    console.log(final);
-}
+// {
+//     let arr1:number [] = [1,2,3,4,5,6]
+//     let index1:number =  Math.ceil(arr1.length / 2)
+//     let newone:number[] = []
+//     let newtwo:number[] = []
+//     let final:number[] = []
+//     for (let index = 0; index < arr1.length; index++) {
+//         const element = arr1[index];
+//         if (index >= index1) {
+//             newone.push(element)
+//         }else{
+//             newtwo.push(element)
+//         }
+//     }
+//     final = [...newone , ...newtwo]
+//     console.log(final);
+// }
 // 22. Write a ts program to right rotate an array.
-{
-    var arr1 = [1, 2, 3, 4, 5, 6];
-    var index1 = Math.ceil(arr1.length / 2);
-    var newone = [];
-    var newtwo = [];
-    var final = [];
-    for (var index = 0; index < arr1.length; index++) {
-        var element = arr1[index];
-        if (index < index1) {
-            newone.push(element);
-        }
-        else {
-            newtwo.push(element);
-        }
-    }
-    final = __spreadArray(__spreadArray([], newtwo, true), newone, true);
-    console.log(final);
-}
+// {
+//     let arr1:number [] = [1,2,3,4,5,6]
+//     let index1:number =  Math.ceil(arr1.length / 2)
+//     let newone:number[] = []
+//     let newtwo:number[] = []
+//     let final:number[] = []
+//     for (let index = 0; index < arr1.length; index++) {
+//         const element = arr1[index];
+//         if (index < index1) {
+//             newone.push(element)
+//         }else{
+//             newtwo.push(element)
+//         }
+//     }
+//     final = [...newtwo,...newone ]
+//     console.log(final);
+// }

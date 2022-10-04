@@ -277,41 +277,41 @@
 // }
 
 // 21. Write a ts program to left rotate an array.
-{
-    let arr1:number [] = [1,2,3,4,5,6]
-    let index1:number =  Math.ceil(arr1.length / 2)
-    let newone:number[] = []
-    let newtwo:number[] = []
-    let final:number[] = []
+// {
+//     let arr1:number [] = [1,2,3,4,5,6]
+//     let index1:number =  Math.ceil(arr1.length / 2)
+//     let newone:number[] = []
+//     let newtwo:number[] = []
+//     let final:number[] = []
 
-    for (let index = 0; index < arr1.length; index++) {
-        const element = arr1[index];
-        if (index >= index1) {
-            newone.push(element)
-        }else{
-            newtwo.push(element)
-        }
-    }
-    final = [...newone , ...newtwo]
-    console.log(final);
-}
+//     for (let index = 0; index < arr1.length; index++) {
+//         const element = arr1[index];
+//         if (index >= index1) {
+//             newone.push(element)
+//         }else{
+//             newtwo.push(element)
+//         }
+//     }
+//     final = [...newone , ...newtwo]
+//     console.log(final);
+// }
 
 // 22. Write a ts program to right rotate an array.
-{
-    let arr1:number [] = [1,2,3,4,5,6]
-    let index1:number =  Math.ceil(arr1.length / 2)
-    let newone:number[] = []
-    let newtwo:number[] = []
-    let final:number[] = []
+// {
+//     let arr1:number [] = [1,2,3,4,5,6]
+//     let index1:number =  Math.ceil(arr1.length / 2)
+//     let newone:number[] = []
+//     let newtwo:number[] = []
+//     let final:number[] = []
 
-    for (let index = 0; index < arr1.length; index++) {
-        const element = arr1[index];
-        if (index < index1) {
-            newone.push(element)
-        }else{
-            newtwo.push(element)
-        }
-    }
-    final = [...newtwo,...newone ]
-    console.log(final);
-}
+//     for (let index = 0; index < arr1.length; index++) {
+//         const element = arr1[index];
+//         if (index < index1) {
+//             newone.push(element)
+//         }else{
+//             newtwo.push(element)
+//         }
+//     }
+//     final = [...newtwo,...newone ]
+//     console.log(final);
+// }
