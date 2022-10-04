@@ -5,6 +5,15 @@
 //     console.log(e)
 //   })
 // }
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
 // 2. Write a ts program to print all negative elements in an array.
 // {
 //   let numArr: number[] = [-3, -2, -1, 0, 1, 2, 3]
@@ -104,14 +113,190 @@
 // {
 //     let arr1:any []= [1,2]
 //     let arr2:any []= ['ameen','akbar']
-//     let newarr:any [] = arr1.concat(arr2) 
+//     let newarr:any [] = arr1.concat(arr2)
 //     console.log(newarr);
 // }
 // 10. Write a ts program to delete an element from an array at specified position.
+// {
+//     let arr1:number[] = [1,2,3,4,5,6,5000]
+//     let new1 = arr1.filter((e)=>{
+//         return e < 50
+//     })
+//     console.log(new1);
+// }
+// 11. Write a ts program to count frequency of each element in an array.
+// {
+//   let arr: string[] = ['1', '2', '3', '1', '23', '23']
+//   let fOcearence = (a: string[], b: string) => {
+//       let c: number = 0
+//     arr.forEach((e) => {
+//         if (e === b) {
+//             c++
+//         }
+//     })
+//     console.log(c)
+//     return c
+// }
+// fOcearence(arr, '23')
+// }
+// 12. Write a ts program to print all unique elements in the array.
+// {
+//   let arr: string[] = ['1', '2', '3', '1', '23', '23', '7625']
+//   let uNum = (a:string[]) => {
+//       let num: number = 0
+//       let newone = arr.filter((e) => {
+//         let num = Number(e)
+//         return num < 50
+//       })
+//       console.log(newone)
+//   }
+//   uNum(arr)
+// }
+// 13. Write a ts program to count total number of duplicate elements in an array.
+// {
+//   let arr: number[] = [5, 1, 1, 2, 34, 5, 5, 6, 5]
+//   let dcont = (a: number[]) => {
+//     let sorted = arr.sort((a: number, b: number): number => {
+//       return a - b
+//     })
+//     let counter: number = 0
+//     sorted.forEach((e: number, i: number) => {
+//       if (e == arr[i + 1]) {
+//         counter++
+//       }
+//     })
+//     console.log(counter)
+//   }
+//   dcont(arr)
+// }
+// 14. Write a ts program to delete all duplicate elements from an array.
+// {
+//   let arr: number[] = [5, 1, 1, 2, 34, 5, 5, 6, 5]
+//   let dcont = (a: number[]): number[] => {
+//     let newone: number[] = []
+//     let sorted = arr.sort((a: number, b: number): number => {
+//       return a - b
+//     })
+//     let counter: number = 0
+//     sorted.forEach((e: number, i: number) => {
+//       if (e == arr[i + 1]) {
+//         counter++
+//       } else {
+//         newone.push(e)
+//       }
+//     })
+//     console.log(newone)
+//     return newone
+//   }
+//   dcont(arr)
+// }
+// 15. Write a ts program to merge two array to third array.
+// {
+//   let a: string[] = ['ameen']
+//   let b: string[] = ['akbar']
+//   let c: string[] = ['rasheed']
+//   a = [...a, ...b, ...c]
+//   console.log(a)
+// }
+// 16. Write a ts program to find reverse of an array.
+// {
+//     let arr:number []= [1,2,3,4]
+//     arr.reverse()
+//     console.log(arr);
+// }
+// 17. Write a ts program to put even and odd elements of array in two separate array.
+// let a: number[] = [1, 2, 3, 4]
+// let even: number[] = []
+// let odd: number[] = []
+// a.forEach((e) => {
+//   if (e % 2 == 0) {
+//     even.push(e)
+//   } else {
+//     odd.push(e)
+//   }
+// })
+// console.log('Even Numbers =>', even)
+// console.log('Odd Numbers =>', odd)
+// 18. Write a ts program to search an element in an array.
+// {
+//   let arr: number[] = [1, 2, 3, 4, 5]
+//   let userSearch: number = 31
+//   for (let index = 0; index < arr.length; index++) {
+//     let element = arr[index]
+//     // element.toString()
+//     if (element == userSearch) {
+//       console.log(element)
+//       break
+//     } else {
+//       console.log('Nothing Found')
+//     }
+//   }
+// }
+// 19. Write a ts program to sort array elements in ascending or descending order.
+// {
+//   let arr: number[] = [11, 1, 3, 4, 51]
+//   let ascending: number[] = arr.sort((a, b) => {
+//     return a - b
+//   })
+//   console.log("Ascending Order",ascending)
+//   let descending: number[] = arr.sort((a, b) => {
+//     return b - a
+//   })
+//   console.log("Descending Order",descending)
+// }
+// 20. Write a ts program to sort even and odd elements of array separately.
+// {
+//   let even: number[] = []
+//   let odd: number[] = []
+//   let arr: number[] = [11, 1, 3, 4, 51]
+//   let sortedArr: number[] = arr.sort((a, b) => {
+//     return a - b
+//   })
+//   sortedArr.forEach((e) => {
+//     if (e % 2 == 0) {
+//       even.push(e)
+//     } else {
+//       odd.push(e)
+//     }
+//   })
+//   console.log('Even Numbers', even)
+//   console.log('Odd Numbers', odd)
+// }
+// 21. Write a ts program to left rotate an array.
 {
-    var arr1 = [1, 2, 3, 4, 5, 6, 5000];
-    var new1 = arr1.filter(function (e) {
-        return e < 50;
-    });
-    console.log(new1);
+    var arr1 = [1, 2, 3, 4, 5, 6];
+    var index1 = Math.ceil(arr1.length / 2);
+    var newone = [];
+    var newtwo = [];
+    var final = [];
+    for (var index = 0; index < arr1.length; index++) {
+        var element = arr1[index];
+        if (index >= index1) {
+            newone.push(element);
+        }
+        else {
+            newtwo.push(element);
+        }
+    }
+    final = __spreadArray(__spreadArray([], newone, true), newtwo, true);
+    console.log(final);
+}
+// 22. Write a ts program to right rotate an array.
+{
+    var arr1 = [1, 2, 3, 4, 5, 6];
+    var index1 = Math.ceil(arr1.length / 2);
+    var newone = [];
+    var newtwo = [];
+    var final = [];
+    for (var index = 0; index < arr1.length; index++) {
+        var element = arr1[index];
+        if (index < index1) {
+            newone.push(element);
+        }
+        else {
+            newtwo.push(element);
+        }
+    }
+    final = __spreadArray(__spreadArray([], newtwo, true), newone, true);
+    console.log(final);
 }
