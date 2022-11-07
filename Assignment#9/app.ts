@@ -95,6 +95,36 @@
 // Note : Bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted,
 // Sample Data: [6,4,0, 3,-2,1]
 // Expected Output : [-2, 0, 1, 3, 4, 6]
-var a: number[] = [6, 4, 0, 3, -2, 1]
-a.sort((a,b)=>a-b)
-console.log(a);
+//Ans...
+// var a: number[] = [6, 4, 0, 3, -2, 1]
+// a.sort((a,b)=>a-b)
+// console.log(a);
+
+// 7. Write a TypeScript program which returns a subset of a string.
+// Sample Data: dog
+// Expected Output: ["d", "do", "dog", "o", "og", "g"]
+{
+  let a: string = 'dog'
+  let eg: string = ''
+  let eg1: string = ''
+  let eg2: string = ''
+  let b: string[] = []
+  for (let index1 = 0; index1 < a.length; index1++) {
+    const element = a[index1]
+    eg += element
+    b.push(eg)
+    console.log(b)
+  }
+  for (let index1 = 1; index1 < a.length; index1++) {
+    const element = a[index1]
+    eg1 += element
+    b.push(eg1)
+    console.log(b)
+  }
+  for (let index1 = 2; index1 < a.length; index1++) {
+    const element = a[index1]
+    eg2 += element
+    b.push(eg2)
+    console.log(b)
+  }
+}
