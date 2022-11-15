@@ -22,6 +22,14 @@ const HeaderArt = () =>{
                 <li>How do I become a seller if I have a store outside the USA? &or;</li>
             </ul>
         </div>
+        <div>
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+        </div>
     </div>
   )
 }
