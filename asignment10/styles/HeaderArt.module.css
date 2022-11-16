@@ -63,12 +63,121 @@
   text-align: center;
 }
 
-.tabs2 li:nth-child(2){
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0px;
-    text-align: left;
-       
+.tabs2 li:nth-child(2) {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.tabs3 {
+  background-color: #ffffff;
+  position: relative;
+}
+.bgimg {
+  width: 97vw;
+  position: absolute;
+  top: 15vw;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bgimg img {
+  width: 40%;
+}
+.circlesParent {
+  left: 7vw;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+  margin: auto;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 40px 0px;
+  box-sizing: border-box;
+}
+
+.circles {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 50%;
+  font-family: 'BeaufortforLOL-Bold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.circlesParent > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 40%;
+}
+
+.circlesParent div:nth-child(4) {
+  align-self: center;
+}
+.circlesParent > div > div {
+  flex: 1;
+}
+.circlesParent > div > p {
+  flex: 5;
+}
+.circlesParent > div:nth-child(7) {
+  width: 110px;
+  margin: auto;
+  align-self: center;
+}
+
+/*second last from Footer*/
+.SLart {
+  background-color: #f9fafd;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 3rem;
+}
+.SLart > div {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.SLart a {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  align-self: flex-start;
+  color: #67cbab;
+  text-decoration: none;
+}
+
+.SLart > div p:nth-child(2) {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.SLart > div p:nth-child(3) {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
 }
