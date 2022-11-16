@@ -1,10 +1,10 @@
 import BtnBr from '../Btn-With-Br/BtnBr'
 import Image from 'next/image'
-import style from '/styles/Header.module.css'
-import BgImg from '/Images/Navbar/Frame 67.png'
-import art1 from '/Images/Navbar/factory-workshop-interior-machines-glass-production-background 2.png'
-import art2 from '/Images/Navbar/agricultural-silo 2.png'
-import vertex from '/Images/Navbar/Rectangle 91.png'
+import style from '/styles/HomePage/Header.module.css'
+import BgImg from '/Images/HomePage/Frame 67.png'
+import art1 from '/Images/HomePage//factory-workshop-interior-machines-glass-production-background 2.png'
+import art2 from '/Images/HomePage/agricultural-silo 2.png'
+import vertex from '/Images/HomePage/Rectangle 91.png'
 
 const Header = () => {
   return (

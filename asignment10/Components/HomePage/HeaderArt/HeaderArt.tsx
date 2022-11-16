@@ -1,9 +1,9 @@
-import style from '/styles/HeaderArt.module.css'
+import style from '/styles/HomePage/HeaderArt.module.css'
 import Image from 'next/image'
-import BgImg from '/Images/Navbar/Rectangle 1 (Traced).png'
+import BgImg from '/Images/HomePage/Rectangle 1 (Traced).png'
 import BtnBr from '../Btn-With-Br/BtnBr'
-import vouture from '/Images/Navbar/Vector (5).png'
-import box from '/Images/Navbar/box.png'
+import vouture from '/Images/HomePage/Vector (5).png'
+import box from '/Images/HomePage/box.png'
 const HeaderArt = () => {
   return (
     <>

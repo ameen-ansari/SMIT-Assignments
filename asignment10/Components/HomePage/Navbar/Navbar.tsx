@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import style from '/styles/Navbar.module.css'
-import logo from '/Images/Navbar/logo.png'
-import search from '/Images/Navbar/search.png'
-import user from '/Images/Navbar/user (1).png'
-import or from '/Images/Navbar/Vector.png'
+import style from '/styles/HomePage/Navbar.module.css'
+import logo from '/Images/HomePage/logo.png'
+import search from '/Images/HomePage/search.png'
+import user from '/Images/HomePage/user (1).png'
+import or from '/Images/HomePage/Vector.png'
 
 const Navbar = () => {
   return (

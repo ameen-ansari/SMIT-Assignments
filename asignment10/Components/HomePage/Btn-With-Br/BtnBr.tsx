@@ -1,4 +1,4 @@
-import style from '/styles/Btn/BtnBr.module.css'
+import style from '/styles/HomePage/Btn/BtnBr.module.css'
 
 
 
