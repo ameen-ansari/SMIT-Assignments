@@ -14,7 +14,7 @@ const Part2 = () => {
         </div>
         <div>
           <ul className={style.tabs2}>
-            <li>How do I sell on HypeIndustry? &or; </li>
+            <li>How do I sell on HypeIndustry? <span>&and;</span> </li>
             <li>
               To ensure the quality and authenticity of all items on our
               marketplace, we only allow a select group of stores and sellers
@@ -25,13 +25,13 @@ const Part2 = () => {
             </li>
             <li>
               I requested to become a SELLER, how long will it take to get
-              approved? &or;
+              approved? <span>&or;</span>
             </li>
-            <li>How do I delete my Account? &or;</li>
-            <li>Can I share my seller privileges with others? &or;</li>
-            <li>Can I create several Seller Accounts? &or;</li>
+            <li>How do I delete my Account? <span>&or;</span></li>
+            <li>Can I share my seller privileges with others?  <span>&or;</span></li>
+            <li>Can I create several Seller Accounts?  <span>&or;</span></li>
             <li>
-              How do I become a seller if I have a store outside the USA? &or;
+              How do I become a seller if I have a store outside the USA? <span>&or;</span>
             </li>
           </ul>
         </div>
