@@ -1,12 +1,16 @@
 // import HomePage from '../Components/VeiwPages/HomePage'
+// import Hypeindustry from "../Components/VeiwPages/Hypeindustry";
+// import Shipping from "../Components/VeiwPages/Shipping";
 
-import Hypeindustry from "../Components/VeiwPages/Hypeindustry";
+
+
 
 export default function Home() {
   return (
     <div>
       {/* <HomePage /> */}
-      <Hypeindustry />
+      {/* <Hypeindustry /> */}
+      {/* <Shipping /> */}
     </div>
   )
 }
