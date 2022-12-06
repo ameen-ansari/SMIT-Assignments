@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import styles from '../styles/Home.module.css'
+import { collection, addDoc } from "firebase/firestore"; 
 
 export default function Home() {
   const [data, setdata] = useState<string[]>([])
   const [input, setinput] = useState<string>('')
   const [doneTodos, setDoneTodos] = useState<string[]>([])
+
   const save = () => {
     if (input.length > 0) {
       let newdata: string[] = [...data, input]
@@ -14,6 +16,7 @@ export default function Home() {
       alert('Invalid')
     }
   }
+
   let checked = (e: string) => {
     let donedata: string[] = [...doneTodos, e]
     setDoneTodos(donedata)
@@ -22,12 +25,14 @@ export default function Home() {
     })
     setdata(filteredarr)
   }
+
   let cancel = (e: string) => {
     let filteredarr = data.filter((item) => {
       return item != e
     })
     setdata(filteredarr)
   }
+  
   let reset = () => {
     setDoneTodos([])
   }
