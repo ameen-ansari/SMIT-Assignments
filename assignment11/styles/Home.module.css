@@ -33,14 +33,14 @@
   border: 0;
   outline: 0;
 }
-.manager span {
+/* .manager span {
   width: 10%;
   text-align: center;
   font-size: 45px;
   font-weight: bold;
   color: #ffffff;
   cursor: pointer;
-}
+} */
 
 .todos {
   display: flex;
@@ -52,7 +52,7 @@
   color: rgb(92, 133, 217);
   font-size: 18px;
   font-weight: 600;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .todos > div {
   padding: 1rem;
@@ -66,46 +66,121 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem; 
   width: 20%;
 }
-.todos > div > div span {
+/* .todos > div > div span {
   text-align: center;
   background-color: #d8e5f7;
   width: 50%;
   border-radius: 50%;
   cursor: pointer;
+} */
+.manager button {
+  width: 20%;
+  height: 100%;
+  font-size: 32px;
+  background-color: rgb(92, 133, 217);
+  color: #ffffff;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
 }
 
 .hr {
-    width: 130%;
-    padding: 2px;
-    background-color: rgb(162, 199, 236);
-    border: 0;
+  width: 130%;
+  padding: 2px;
+  background-color: rgb(162, 199, 236);
+  border: 0;
 }
 
-.todo button {
-    padding: 5px 45px;
+.todo > button {
+  padding: 5px 45px;
+  font-size: 18px;
+  background-color: rgb(162, 199, 236);
+  color: #ffffff;
+  font-weight: 600;
+  border: 0;
+  border-radius: 10px;
+}
+
+.inmap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inmap > div:nth-child(1) {
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+}
+.intodop1 > div:nth-child(1) {
+  display: flex;
+  width: 80% !important;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.3rem;
+}
+.intodop2 , .intodop2 > div:nth-child(1)  {
+  display: none;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.intodop1 > div:nth-child(1) p {
+  margin: 0px 0px;
+}
+
+input.checkb {
+  width: 15px;
+  height: 15px;
+}
+.intodop1 div:nth-child(2) {
+  display: flex;
+  width: 20% !important;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+@media (max-width: 600px) {
+  .todo{
+    width: 100%;
+  }
+  .todos > div {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #ffffff;
+    width: 95vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .manager{
+    width:85vw;
+  }
+  .manager input {
+    padding: 1rem;
+    width: 80%;
     font-size: 18px;
-    background-color: rgb(162, 199, 236);
-    color: #FFFFFF;
-    font-weight: 600;
     border: 0;
-    border-radius: 10px;
-}
-
-@media (max-width:600px){
-    .todo{
-        width: 97%;
-    }
-    .manager input {
-        padding: 1rem;
-        width: 80%;
-        font-size: 18px;
-        border: 0;
-        outline: 0;
-      }
-      .manager span {
-        width: 20%;
-      }
+    outline: 0;
+  }
+  /* .manager span {
+    width: 20%;
+  } */
+  .inmap {
+    gap: 1rem;
+  }
+  .intodop1 > div:nth-child(1) {
+ width: 100% !important;
+  }
+  .intodop1 > div:nth-child(2) {
+ display: none;
+  }
+  .intodop2 , .intodop2 > div:nth-child(1)  {
+    display: flex;
+  }
 }
