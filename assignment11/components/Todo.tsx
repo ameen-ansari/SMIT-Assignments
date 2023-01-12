@@ -31,21 +31,22 @@ export default function Home() {
         saveBtn.disabled = true;
         addDoc(collection(db, "userData"), {
           description: input,
-          status: "unCompleted",
+          status: false,
         }).then((doc1) => {
-          console.log(doc1.id);
+          setuid(doc1.id);
+          setUserData([
+            ...userData,
+            {
+              description: input,
+              id: doc1.id,
+              status: false,
+            },
+          ]);
           const washingtonRef = doc(db, "userData", doc1.id);
           updateDoc(washingtonRef, {
             id: doc1.id,
           });
         });
-        setUserData([
-          ...userData,
-          {
-            description: input,
-            id: new Date().getTime(),
-          },
-        ]);
       } catch (error) {
         alert(error);
       } finally {
@@ -56,6 +57,7 @@ export default function Home() {
       alert("Invalid Input");
     }
   };
+  // let updatebtn1 = document.getElementById("updatebtn1");
 
   useEffect(() => {
     try {
@@ -74,24 +76,80 @@ export default function Home() {
     }
   }, []);
   let cancel = async (e: any) => {
-    await deleteDoc(doc(db, "userData", e.id));  };
-
-
+    await deleteDoc(doc(db, "userData", e.id));
+    let arr: any = [];
+    userData.forEach((elem: any) => {
+      if (elem.id !== e.id) {
+        arr.push(elem);
+        setUserData(arr);
+      }
+      if (userData.length === 1) {
+        setUserData([]);
+      }
+    });
+  };
 
   let checked = async (e: any) => {
-setinput(e.description)
-setuid(e.id)
-
+    let savebtn1: any = document.getElementById("savebtn1");
+    let updatebtn1: any = document.getElementById("updatebtn1");
+    savebtn1.style.display = "none";
+    updatebtn1.style.display = "block";
+    setinput(e.description);
+    setuid(e.id);
   };
 
   let updateD = async () => {
-   
+    let savebtn1: any = document.getElementById("savebtn1");
+    let updatebtn1: any = document.getElementById("updatebtn1");
+    try {
+      userData.forEach((element: any) => {
+        if (element.id === uid) {
+          element.description = input;
+        }
+      });
       let QQ = doc(db, "userData", uid);
-      // setinput(refdoc?.data()?.description)
-    let updatebtn1 = document.getElementById('updatebtn1')
-    await updateDoc(QQ, {
-     description: input,
-    })
+      await updateDoc(QQ, {
+        description: input,
+      });
+      savebtn1.disabled = true;
+    } catch (error) {
+      alert(error);
+    } finally {
+      savebtn1.style.display = "block";
+      updatebtn1.style.display = "none";
+      savebtn1.disabled = false;
+      setinput("");
+    }
+  };
+  let todoChecker = async (e: any) => {
+    let status: boolean = false;
+    let checkBI = document.getElementById(e.id);
+    if (checkBI?.checked === true) {
+      let QQ = doc(db, "userData", e.id);
+      await updateDoc(QQ, {
+        status: true,
+      });
+    } else {
+      let QQ = doc(db, "userData", e.id);
+      await updateDoc(QQ, {
+        status: false,
+      });
+    }
+    let arr:any = []
+    userData.forEach((elem:any) => {
+      if (elem.id === e.id ) {
+        if (elem.status === true) {
+          elem.status = false
+        }else{
+          elem.status = true
+        }
+        arr.push(elem)
+        setUserData(arr)
+      }else{
+        arr.push(elem)
+        setUserData(arr)
+      }
+    });
   };
 
   return (
@@ -109,7 +167,11 @@ setuid(e.id)
           <button id="savebtn1" onClick={save}>
             +
           </button>
-          <button id="updatebtn1" onClick={updateD}>
+          <button
+            id="updatebtn1"
+            className={styles.updatebtn1}
+            onClick={updateD}
+          >
             +
           </button>
         </div>
@@ -127,9 +189,11 @@ setuid(e.id)
                 <div className={styles.intodop1}>
                   <div>
                     <input
-                      // onChange={checked}
+                      id={item.id}
+                      onChange={() => todoChecker(item)}
                       type="checkbox"
                       className={styles.checkb}
+                      checked={item.status}
                     />
                     <p>{item?.description}</p>
                   </div>
