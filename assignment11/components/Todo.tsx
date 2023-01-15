@@ -57,7 +57,6 @@ export default function Home() {
       alert("Invalid Input");
     }
   };
-  // let updatebtn1 = document.getElementById("updatebtn1");
 
   useEffect(() => {
     try {
@@ -122,38 +121,34 @@ export default function Home() {
     }
   };
   let todoChecker = async (e: any) => {
-    let status: boolean = false;
-    let checkBI = document.getElementById(e.id);
-    try{
-      if (checkBI?.checked === true) {
-        let QQ = doc(db, "userData", e.id);
+    let checkBI: any = document.getElementById(e.id);
+    if (checkBI.type === "checkbox") {
+      let QQ = doc(db, "userData", e.id);
+      if (checkBI.checked) {
         await updateDoc(QQ, {
           status: true,
         });
       } else {
-        let QQ = doc(db, "userData", e.id);
         await updateDoc(QQ, {
           status: false,
         });
       }
-    }catch(error){
-      alert('error in check box',error)
-    }
-    let arr:any = []
-    userData.forEach((elem:any) => {
-      if (elem.id === e.id ) {
-        if (elem.status === true) {
-          elem.status = false
-        }else{
-          elem.status = true
+      let arr2 : any = []
+      userData.forEach((doc:any)=>{
+        if (doc.id === e.id) {
+          if (doc.status === true) {
+            doc.status = false
+          }
+          else{
+            doc.status = true
+          }
         }
-        arr.push(elem)
-        setUserData(arr)
-      }else{
-        arr.push(elem)
-        setUserData(arr)
-      }
-    });
+        arr2.push(doc)
+        setUserData(arr2)
+      })
+    } else {
+      console.log("Type Is NOt CheckBox");
+    }
   };
 
   return (
