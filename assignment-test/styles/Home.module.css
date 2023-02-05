@@ -1,0 +1,49 @@
+.ass {
+  text-align: center;
+  overflow-y: hidden;
+  margin: 2rem;
+}
+.dataparent {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.dataparent * {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+  margin: 8px;
+}
+
+.color {
+  color: orange;
+}
+.getbtn {
+  width: 145px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+@media (max-width: 500px) {
+  .getbtn {
+    width: 75vw;
+    border-radius: 36px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
