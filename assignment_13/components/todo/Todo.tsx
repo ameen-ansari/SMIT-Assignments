@@ -60,7 +60,6 @@ const Todo = () => {
         {data.map((doc: any, i: number) => {
           return (
             <div key={i} className="card">
-              <span>{i + 1}</span>
               <div className="card-body">
                 <h2>{doc.value}</h2>
               </div>

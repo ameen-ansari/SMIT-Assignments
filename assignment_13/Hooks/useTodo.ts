@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addData, deleteData, getData, updateData } from "@/store/reducers";
-// import { doDelete } from "@/store/reducers";
+import { addData, deleteData, getData, updateData } from "@/store/AsyncFuncs";
 
 const useTodo = () => {
-  let data: any = useSelector((store: any): any => store.reducers.slice1);
   const dispatch: any = useDispatch();
   const [updateRef, setUpdateRef] = useState({});
   const [input, setInput] = useState<any>({
@@ -29,11 +27,16 @@ const useTodo = () => {
     })
   };
   const goGithub = () => {
-    window.open("https://github.com/ameen-ansari/AppFromRedux", "_blank");
+    window.open("https://github.com/ameen-ansari/SMIT-Assignments/tree/master/assignment_13", "_blank");
   };
-
+  
   const deleteH = (e: any) => {
+    let adder = document.getElementById("adder") as HTMLSpanElement;
+    let updater = document.getElementById("updater") as HTMLSpanElement;
+    adder.style.display = "block";
+    updater.style.display = "none";
     dispatch(deleteData(e));
+    setInput({value:''})
   };
   const updateH = (e: any) => {
     setInput({ value: e.value });
@@ -45,6 +48,7 @@ const useTodo = () => {
   };
   let updateTodoH = () => {
     dispatch(updateData(updateRef));
+    setInput({value:''})
   };
 
   return { input, updateTodoH, addTodoH, inputH, goGithub, deleteH, updateH };
