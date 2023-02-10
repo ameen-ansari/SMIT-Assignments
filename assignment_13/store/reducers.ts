@@ -34,26 +34,25 @@ export let getData = createAsyncThunk("getData/Todo", async () => {
 
 export let deleteData = createAsyncThunk("deleteData/Todo", async (e: any) => {
   let docRef = doc(db, "TODOS_BY_REDUX", e.id);
-  // await deleteDoc(docRef)
+  try {
+     await deleteDoc(docRef);
+  } catch (error) {
+    alert(error);
+  }
+  return e
 });
 export let updateData = createAsyncThunk(
   "updateData/Todo",
-  async (e: any) => {}
+  async (e: any) => {
+    console.log('Update Handler');
+    
+  }
 );
 
 const slice1: any = createSlice({
   name: "slice1",
   initialState: [],
-  reducers: {
-    doDelete: (state: any, action: any) => {
-      let items = state.map((item: any) => {
-        if (action.payload.id !== item.id) {
-          return item;
-        }
-      });
-      return items ;
-    },
-  },
+  reducers: {},
   extraReducers: (builder: any) => {
     builder.addCase(getData.fulfilled, (state: any, action: any) => {
       let MyState = action.payload;
@@ -63,6 +62,15 @@ const slice1: any = createSlice({
       let MyState = [...state, action.payload];
       return MyState;
     });
+    builder.addCase(deleteData.fulfilled, (state: any, action: any) => {
+      let arr :any= []
+      state.forEach((item: any) :any=> {
+        if (action.payload.id !== item.id) {
+          arr.push(item)
+        }
+      });
+      return arr;
+    });
   },
 });
 
@@ -70,4 +78,4 @@ export default combineReducers({
   slice1: slice1.reducer,
 });
 
-export const { doDelete } = slice1.actions;
+// export const { doDelete } = slice1.actions;

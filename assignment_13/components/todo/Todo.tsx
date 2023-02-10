@@ -3,7 +3,7 @@ import useTodo from "@/Hooks/useTodo";
 import { useSelector } from "react-redux";
 
 const Todo = () => {
-  // let data: any = useSelector((store: any): any => store.reducers.slice1);
+  let data: any = useSelector((store: any): any => store.reducers.slice1);
   const { input, addTodoH, inputH, goGithub , deleteH ,updateH} = useTodo();
 
   return (
@@ -54,7 +54,7 @@ const Todo = () => {
             <div key={i} className="card">
               <span>{i + 1}</span>
               <div className="card-body">
-                {/* <h2>{doc}</h2> */}
+                <h2>{doc.value}</h2>
               </div>
               <div className={style.btns}>
                 <button onClick={()=>deleteH(doc)}>Delele</button>
