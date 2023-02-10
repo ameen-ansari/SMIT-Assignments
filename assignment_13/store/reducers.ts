@@ -8,7 +8,6 @@ import {
   getDocs,
   updateDoc,
 } from "firebase/firestore";
-import { useSelector } from "react-redux";
 import { combineReducers } from "redux";
 
 export let addData = createAsyncThunk("addData/Todo", async (arg1: any) => {
@@ -35,19 +34,26 @@ export let getData = createAsyncThunk("getData/Todo", async () => {
 export let deleteData = createAsyncThunk("deleteData/Todo", async (e: any) => {
   let docRef = doc(db, "TODOS_BY_REDUX", e.id);
   try {
-     await deleteDoc(docRef);
+    await deleteDoc(docRef);
   } catch (error) {
     alert(error);
   }
-  return e
+  return e;
 });
-export let updateData = createAsyncThunk(
-  "updateData/Todo",
-  async (e: any) => {
-    console.log('Update Handler');
-    
+export let updateData = createAsyncThunk("updateData/Todo", async (e: any) => {
+  let docRef = doc(db, "TODOS_BY_REDUX", e.id);
+  try{
+ await updateDoc(docRef, {
+      value: e.value,
+    });
+    let adder = document.getElementById('adder') as HTMLSpanElement
+    let updater = document.getElementById('updater') as HTMLSpanElement
+    adder.style.display = 'block'
+    updater.style.display = 'none'
+  }catch(error){
+    alert(error)
   }
-);
+});
 
 const slice1: any = createSlice({
   name: "slice1",
@@ -63,10 +69,10 @@ const slice1: any = createSlice({
       return MyState;
     });
     builder.addCase(deleteData.fulfilled, (state: any, action: any) => {
-      let arr :any= []
-      state.forEach((item: any) :any=> {
+      let arr: any = [];
+      state.forEach((item: any): any => {
         if (action.payload.id !== item.id) {
-          arr.push(item)
+          arr.push(item);
         }
       });
       return arr;

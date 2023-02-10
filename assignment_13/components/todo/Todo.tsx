@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 
 const Todo = () => {
   let data: any = useSelector((store: any): any => store.reducers.slice1);
-  const { input, addTodoH, inputH, goGithub , deleteH ,updateH} = useTodo();
+  const { input, addTodoH, inputH, goGithub , deleteH ,updateH , updateTodoH} = useTodo();
 
   return (
     <>
@@ -37,10 +37,18 @@ const Todo = () => {
             />
             <span
               onClick={addTodoH}
-              className="input-group-text"
-              id="basic-addon2"
+              className="input-group-text adderC"
+              id="adder"
             >
               Add
+            </span>
+            <span
+              onClick={updateTodoH}
+              className="input-group-text"
+              style={{display:'none'}}
+              id="updater"
+            >
+              Update
             </span>
           </div>
           <h2 className="mt-5" style={{ textAlign: "center" }}>

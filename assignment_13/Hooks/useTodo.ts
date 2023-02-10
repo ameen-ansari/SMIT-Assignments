@@ -5,8 +5,8 @@ import { addData, deleteData, getData, updateData } from "@/store/reducers";
 
 const useTodo = () => {
   let data: any = useSelector((store: any): any => store.reducers.slice1);
-  const [TodoData, setTodoData] = useState([]);
   const dispatch: any = useDispatch();
+  const [updateRef, setUpdateRef] = useState({});
   const [input, setInput] = useState<any>({
     value: "",
   });
@@ -28,13 +28,22 @@ const useTodo = () => {
     window.open("https://github.com/ameen-ansari/AppFromRedux", "_blank");
   };
 
-  const deleteH = (e: any) => {    
+  const deleteH = (e: any) => {
     dispatch(deleteData(e));
   };
-  const updateH = (e: any) => {    
-    dispatch(updateData(e));
+  const updateH = (e: any) => {
+    setInput({ value: e.value });
+    setUpdateRef( e );
+    let adder = document.getElementById("adder") as HTMLSpanElement;
+    let updater = document.getElementById("updater") as HTMLSpanElement;
+    adder.style.display = "none";
+    updater.style.display = "block";
+  };
+  let updateTodoH = () => {
+    setUpdateRef( {...updateRef, value: input.value });
+    dispatch(updateData(updateRef));
   };
 
-  return { input, addTodoH, inputH, goGithub, deleteH, updateH };
+  return { input, updateTodoH, addTodoH, inputH, goGithub, deleteH, updateH };
 };
 export default useTodo;
