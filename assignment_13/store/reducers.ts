@@ -53,6 +53,7 @@ export let updateData = createAsyncThunk("updateData/Todo", async (e: any) => {
   }catch(error){
     alert(error)
   }
+  return e
 });
 
 const slice1: any = createSlice({
@@ -73,6 +74,17 @@ const slice1: any = createSlice({
       state.forEach((item: any): any => {
         if (action.payload.id !== item.id) {
           arr.push(item);
+        }
+      });
+      return arr;
+    });
+    builder.addCase(updateData.fulfilled, (state: any, action: any) => {
+      let arr: any = [];
+      state.forEach((item: any): any => {
+        if (action.payload.id !== item.id) {
+          arr.push(item);
+        }else{
+          arr.push(action.payload)
         }
       });
       return arr;

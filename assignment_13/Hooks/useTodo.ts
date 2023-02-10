@@ -23,6 +23,10 @@ const useTodo = () => {
       ...input,
       value: e.target.value,
     });
+    setUpdateRef({
+      ...updateRef,
+      value:e.target.value
+    })
   };
   const goGithub = () => {
     window.open("https://github.com/ameen-ansari/AppFromRedux", "_blank");
@@ -40,7 +44,6 @@ const useTodo = () => {
     updater.style.display = "block";
   };
   let updateTodoH = () => {
-    setUpdateRef( {...updateRef, value: input.value });
     dispatch(updateData(updateRef));
   };
 
