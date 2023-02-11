@@ -14,7 +14,17 @@ const useTodo = () => {
   };
 
   useEffect(() => {
-    dispatch(getData());
+    // let spin:any = document.getElementById('spiner')
+    // spin.style.display = 'flex'
+    // try {
+      // console.log('Before Requiest');
+      dispatch(getData());
+    // } catch (error) {
+      // alert(error)
+    // }finally{
+    //   // spin.style.display = 'none'
+    //   console.log('After Requiest');
+    // }
   }, []);
   const inputH = (e: any) => {
     setInput({

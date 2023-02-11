@@ -4,7 +4,8 @@ import { useSelector } from "react-redux";
 
 const Todo = () => {
   let data: any = useSelector((store: any): any => store.reducers.slice1);
-  const { input, addTodoH, inputH, goGithub , deleteH ,updateH , updateTodoH} = useTodo();
+  const { input, addTodoH, inputH, goGithub, deleteH, updateH, updateTodoH } =
+    useTodo();
 
   return (
     <>
@@ -35,26 +36,29 @@ const Todo = () => {
               aria-describedby="basic-addon2"
               value={input.value}
             />
-            <span
+            <button
               onClick={addTodoH}
               className="input-group-text adderC"
               id="adder"
             >
               Add
-            </span>
-            <span
+            </button>
+            <button
               onClick={updateTodoH}
               className="input-group-text"
-              style={{display:'none'}}
+              style={{ display: "none" }}
               id="updater"
             >
               Update
-            </span>
+            </button>
           </div>
-          <h2 className="mt-5" style={{ textAlign: "center" }}>
+          <h2 className="mt-5"  style={{ textAlign: "center" }}>
             {data.length == 0 ? "Add Some Thing Now..." : "TODOs"}
           </h2>
         </div>
+      </div>
+      <div className="spinner-border my-2" id="spiner" style={{display:'none' ,margin:'auto'}} role="status">
+        <span className="visually-hidden">Loading...</span>
       </div>
       <div className={style.todoParent}>
         {data.map((doc: any, i: number) => {
@@ -64,8 +68,8 @@ const Todo = () => {
                 <h2>{doc.value}</h2>
               </div>
               <div className={style.btns}>
-                <button onClick={()=>deleteH(doc)}>Delele</button>
-                <button onClick={()=>updateH(doc)}>Update</button>
+                <button onClick={() => deleteH(doc)}>Delele</button>
+                <button onClick={() => updateH(doc)}>Update</button>
               </div>
             </div>
           );
